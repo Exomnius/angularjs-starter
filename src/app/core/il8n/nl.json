@@ -1,0 +1,9 @@
+{
+  "ERRORS": {
+    "404": {
+      "TITLE": "Oeps, er is iets misgelopen ...",
+      "DESCRIPTION": "Er is iets misgelopen bij het surfen op de site. Indien nodig kan je een admin contacteren."
+    },
+    "BACK_TO_HOMEPAGE": "Terug naar de homepage"
+  }
+}

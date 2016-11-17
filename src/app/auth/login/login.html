@@ -1,0 +1,29 @@
+<div class="login">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-4 col-md-offset-3 col-lg-offset-4">
+      <form name="vmLogin.loginForm" class="form-horizontal" ng-submit="vmLogin.loginForm.$valid && vmLogin.attemptLogin(vmLogin.loginForm.$valid)" novalidate>
+        <uib-alert ng-show="vmLogin.error === true" type="danger"><span translate>AUTH.LOGIN.GENERAL_ERROR</span></uib-alert>
+
+        <div class="form-group" ng-class="{'has-error': vmLogin.loginForm.username.$invalid && (vmLogin.loginForm.$submitted || !vmLogin.loginForm.username.$pristine)}">
+          <label class="sr-only" for="username" translate>AUTH.LOGIN.USERNAME</label>
+          <input type="text" name="username" id="username" class="form-control" ng-model="vmLogin.username" required placeholder="{{'AUTH.LOGIN.USERNAME' | translate}}" auto-focus>
+          <div class="help-block" ng-messages="vmLogin.loginForm.username.$error" ng-show="vmLogin.loginForm.username.$invalid && (vmLogin.loginForm.$submitted || !vmLogin.loginForm.username.$pristine)">
+            <p ng-message="required"><span translate>VALIDATION.REQUIRED</span></p>
+          </div>
+        </div>
+
+       <div class="form-group" ng-class="{'has-error': vmLogin.loginForm.password.$invalid && (vmLogin.loginForm.$submitted || !vmLogin.loginForm.password.$pristine)}">
+          <label class="sr-only" for="password" translate>AUTH.LOGIN.PASSWORD</label>
+          <input type="password" name="password" id="password" class="form-control" ng-model="vmLogin.password" required placeholder="{{'AUTH.LOGIN.PASSWORD' | translate}}" auto-focus>
+          <div class="help-block" ng-messages="vmLogin.loginForm.password.$error" ng-show="vmLogin.loginForm.password.$invalid && (vmLogin.loginForm.$submitted || !vmLogin.loginForm.password.$pristine)">
+            <p ng-message="required"><span translate>VALIDATION.REQUIRED</span></p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="vmLogin.loginForm.$submitted" translate>AUTH.LOGIN.SIGN_IN</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

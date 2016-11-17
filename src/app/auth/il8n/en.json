@@ -1,0 +1,11 @@
+{
+  "AUTH": {
+    "LOGIN": {
+      "USERNAME": "Username",
+      "PASSWORD": "Password",
+      "SIGN_IN": "Sign In",
+      "GENERAL_ERROR": "The username or password is incorrect."
+    },
+    "LOGOUT": "Logout"
+  }
+}

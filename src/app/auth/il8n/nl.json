@@ -1,0 +1,11 @@
+{
+  "AUTH": {
+    "LOGIN": {
+      "USERNAME": "Gebruikersnaam",
+      "PASSWORD": "Wachtwoord",
+      "SIGN_IN": "Sign In",
+      "GENERAL_ERROR": "Foutieve gebruikersnaam"
+    },
+    "LOGOUT": "Logout"
+  }
+}

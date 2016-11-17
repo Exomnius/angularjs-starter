@@ -1,0 +1,9 @@
+{
+  "ERRORS": {
+    "404": {
+      "TITLE": "Oops, an error has occurred",
+      "DESCRIPTION": "An error has occured while visiting this site. Please contact an administrator."
+    },
+    "BACK_TO_HOMEPAGE": "Back to the homepage"
+  }
+}
